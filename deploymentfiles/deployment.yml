@@ -2,22 +2,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mc-app
+  name: lms-project
   labels:
-    app: mc-app
+    app: swiggy
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels:
-      app: mc-app
+      app: swiggy
   template:
     metadata:
       labels:
-        app: mc-app
+        app: swiggy
     spec:
       containers:
-      - name: mc-app
-        image: devopshubg333/batch13:5
+      - name: cont-1
+        image: danduniharika30/niharika:xyz
         ports:
         - containerPort: 8080
 
