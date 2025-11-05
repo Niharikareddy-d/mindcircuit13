@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: cont-1
-        image: danduniharika30/niharika:1
+        image: danduniharika30/niharika:2
         ports:
         - containerPort: 8080
 
